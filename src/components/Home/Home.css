@@ -1,0 +1,72 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.banner {
+  margin-top:0 ;
+  padding: 100px 0 100px 0;
+  background:url(../../images/banner-bg.png) no-repeat top center;
+  background-size: cover ;
+
+}
+
+.banner .tagline{
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  padding: 8px 10px ;
+background: linear-gradient(90deg , rgb(87, 25, 95) -6% , rgb(19, 63, 107) ) ;
+border: 1px solid rgba(255, 255, 255);
+margin-bottom: 16px;
+display: inline-block;
+}
+
+.banner h1{
+  font-size: 65px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p{
+  color: rgb(179, 179, 179);
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+
+.banner h5{
+  font-weight: 700;
+  margin: 20px 0px 50px 0px ;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top:60px ;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+
+.banner img{
+  animation: updown 3s linear infinite;
+  width: 100%;
+}
+
+
+@keyframes updown {
+  0% { transform: translateY(-20px); }
+  50%{ transform: translateY(20px); }
+  100% {transform: translateY(-20px);}
+}
+.wrap{
+ border-right: 0.08em solid #ffffff;
+}
+

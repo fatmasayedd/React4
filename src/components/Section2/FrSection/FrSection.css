@@ -1,0 +1,60 @@
+
+
+.my-project-frist-back{
+    background-color: black;
+}
+.my-project-frist{
+    margin:0px auto 0px !important;
+   
+    
+
+}
+
+.my-project-frist-img {
+    /* max-width: 100% !important; */
+    /* display: inline-block; */
+    padding-left:10px !important;
+    margin-bottom:30px ;
+    position: relative;
+}
+
+
+
+
+.my-project-frist-img::after{
+    content: "";
+    position: absolute;
+    width: 85.3%;
+    height: 0;
+    top:5;
+    left: 23px;
+    border-radius: 6.2%;
+    background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ;
+    transition: .3s;
+}
+.my-project-frist-img:hover::after{
+    width: 93.07%;
+    height: 100%;
+    top:5;
+    left: 10px;
+}
+.my-project-frist-text{
+    opacity: 0;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 50;
+    color: white;
+    transition: 1s;
+    
+}
+.my-project-frist-img:hover .my-project-frist-text{
+opacity: 1;
+}
+
+.my-project-frist-img img{
+   
+    width: 100% !important;
+}

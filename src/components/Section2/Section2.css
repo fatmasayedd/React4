@@ -1,0 +1,119 @@
+.my-project{
+    height: 100%;
+    background-color: black;
+
+}
+
+
+.my-project-title{
+    padding: 5% 0px 2%;
+    text-align: center;
+    color: white;
+}
+.my-project-title p{
+    color: rgb(153, 152, 152);
+}
+.my-project-link:hover ,.my-project-link {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+
+}
+
+.section{
+    /* width: 550px; */
+    height: 40px ;
+    margin: auto ;
+    /* padding:  auto ; */
+    /* padding-top:10px !important ; */
+    border-radius: 20px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    border: 1px solid white;
+    /* text-decoration: none; */
+
+}
+
+.section-item{
+    /* text-decoration: none; */
+    padding-top: 7px;
+    text-align: center;
+    font-weight: 500;
+  position: relative;
+  z-index: 50;
+}
+
+
+
+
+
+
+
+/* 
+.section-item1{
+    width: 130.5%;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ;
+
+
+} */
+.section-item1::after{
+    content: "";
+    
+    position: absolute;
+    width:0;
+    height: 100%;
+    top:0;
+    left: -15px;
+    z-index: -5;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    /* background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ; */
+    transition: .6s;
+    opacity: 0;
+}
+.section-item1:hover::after{
+    width: 109.5%;
+    height: 100%;
+    background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ;
+    opacity: 1;
+    
+}
+
+.section-item2::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: -5;
+    background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ;
+    transition: .6s;
+}
+.section-item2:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
+
+.section-item3::after{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 100%;
+    top:0;
+    left: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: -5;
+    background:-webkit-linear-gradient(left,rgba(166, 69, 166, 0.9),rgba(123, 0, 255, 0.9)) ;
+    transition: .6s;
+}
+.section-item3:hover::after{
+    width: 109.5%;
+    height: 100%;
+}
+

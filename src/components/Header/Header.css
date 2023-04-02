@@ -1,0 +1,100 @@
+.navbar{
+    background-color: black !important;
+    height: auto ;
+}
+.navbar-brand{
+    font-size: 27px;
+    font-weight: 700;
+}
+.nav-link{
+    font-size: 20px ;
+
+}
+.space{
+    margin-left: 40%;
+}
+
+
+
+.div-icon{
+    width: 25px ;
+    height: 25px ;
+    border-radius: 12px;
+    border: 1px solid white;
+    background-color: rgba(111, 111, 111, 0.491);
+    position: relative;
+    cursor: pointer;
+    /* margin-left:450px ; */
+    /* padding:  auto; */
+}
+.icon{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 13px;
+}
+.div-icon::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    bottom:0px;
+    left:50%;
+   transform: translate(-50%) rotate(45deg);
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+   z-index: -5;
+   opacity: 0;
+}
+/* .icon:hover{
+    color: black ;
+    z-index: 400; 
+} */
+.div-icon:hover::after{
+    width: 105%;
+    height:105%;
+    opacity: 1;
+    border-radius: 15px;
+    color: black;
+}
+
+
+/* .let1{
+
+    margin-left:550px; 
+} */
+.let{
+    width: 150px;
+    text-align: center;
+    height: 38px;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 0px;
+    /* margin-left:550px; */
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.let::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+   z-index: -1;
+}
+.let:hover{
+    color: black;
+    z-index: 3;   
+}
+.let:hover::after{
+    width: 100%;
+height: 100%;
+}
+
+
